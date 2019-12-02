@@ -13,12 +13,12 @@ import retrofit2.http.Path;
 public interface CaloryService {
 
     // TODO: Definisikan service getCalories()
-    @GET("/polinema-mobile/dts-fit/calories")
+    @GET("/geraldoarema/dts-fit/calories")
     Call<List<Calory>> getCalories();
     // TODO: Definisikan service addCalory()
-    @POST("/polinema-mobile/dts-fit/calories")
+    @POST("/geraldoarema/dts-fit/calories")
     Call<Calory> addCalory(@Body Calory calory);
     // TODO: Definisikan service editCalory()
-    @PUT("/polinema-mobile/dts-fit/calories/{id}")
+    @PUT("/geraldoarema/dts-fit/calories/{id}")
     Call<Calory> editCalory(@Path("id") int id, @Body Calory calory);
 }

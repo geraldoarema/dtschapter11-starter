@@ -19,7 +19,7 @@ public class Calory implements Parcelable {
         @Expose
         private Integer calory;
 
-    protected Calory(Parcel in) {
+    public Calory(Parcel in) {
         if (in.readByte() == 0) {
             id = null;
         } else {
@@ -44,6 +44,10 @@ public class Calory implements Parcelable {
             return new Calory[size];
         }
     };
+
+    public Calory() {
+
+    }
 
     public Integer getId() {
             return id;
