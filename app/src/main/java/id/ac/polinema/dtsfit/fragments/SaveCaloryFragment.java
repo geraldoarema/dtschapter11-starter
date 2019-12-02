@@ -79,7 +79,9 @@ public class SaveCaloryFragment extends Fragment {
         if (bundle != null) {
             calory = bundle.getParcelable(Constant.ARG_CALORY);
             // TODO: set informasi calory pada layar tampilan
-
+            bundle.putParcelable(Constant.ARG_CALORY, calory);
+            foodText.setText(calory.getFood());
+            caloryText.setText(String.valueOf(calory.getCalory()));
         }
     }
 
